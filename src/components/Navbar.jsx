@@ -58,12 +58,12 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className=" flex items-center gap-3 sm:gap-4">
+        <div className=" flex items-center gap-4">
           <ThemeSwitcher />
           {loading ? (
             <div
-              className="list-none  mr-3 w-fit  rounded-md bg-black dark:bg-white text-white font-medium dark:text-black  border-solid border-2 border-black
-     dark:border-white  hover:scale-95 transition-all duration-300 ease-in-out max-[300px]:mr-0 max-[300px]:mb-3"
+              className="list-none  mr-3 w-fit  rounded-md bg-black dark:bg-black text-white font-medium dark:text-gray-200  border-solid border-2 border-black
+            dark:border-white  hover:scale-95 transition-all duration-300 ease-in-out max-[300px]:mr-0 max-[300px]:mb-3"
             >
               <span className=" flex items-center text-sm  text-center justify-center   py-[6px] px-3  ">
                 <span className="mr-2">
@@ -80,7 +80,7 @@ const Navbar = () => {
                 className="flex justify-center xl:justify-start font-medium max-[300px]:flex-col "
               >
                 <li
-                  className="list-none  mr-3 w-fit  rounded-md bg-black dark:bg-white text-white font-medium dark:text-black  border-solid border-2 border-black
+                  className="list-none  mr-3 w-fit  rounded-md bg-black dark:bg-black text-white font-medium dark:text-gray-200  border-solid border-2 border-black
          dark:border-white  hover:scale-95 transition-all duration-300 ease-in-out max-[300px]:mr-0 max-[300px]:mb-3"
                 >
                   <Link

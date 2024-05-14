@@ -96,7 +96,7 @@ const SmallInfo = () => {
                 href={item.href}
                 className={`px-4 py-2 relative font-medium text-gray-900  dark:text-gray-50  transition-all duration-300 ${
                   item.href === pathName
-                    ? " font-semibold text-[17px]  text-gray-700 dark:text-gray-300 dark:bg-gray-800 bg-slate-200 rounded-full "
+                    ? " font-medium text-[16px]  text-gray-700 dark:text-gray-300 dark:bg-gray-800 bg-slate-200 rounded-full "
                     : " hover:text-gray-950 hover:font-semibold "
                 } `}
               >

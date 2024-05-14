@@ -49,7 +49,7 @@ const Login = () => {
 
   return (
     <>
-      <section className="">
+      <section className=" my-12 lg:my-0">
         <div className="lg:grid  lg:grid-cols-12">
           <aside className="relative h-16 ml-8 xl:ml-12 hidden lg:flex lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
             <img

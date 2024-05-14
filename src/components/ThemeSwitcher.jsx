@@ -6,7 +6,7 @@ import { TiWeatherSunny } from "react-icons/ti";
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme("light");
   useEffect(() => {
     setMounted(true);
   }, []);
