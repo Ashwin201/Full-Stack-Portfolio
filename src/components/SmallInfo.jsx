@@ -31,10 +31,10 @@ const SmallInfo = () => {
     },
   ];
 
-  return pathName.startsWith("/admin") ? (
+  return pathName.startsWith("/admin") || pathName.startsWith("/project/") ? (
     ""
   ) : (
-    <div className={`  ${pathName === "/login" ? "hidden" : "mt-10"}`}>
+    <div className={`  ${pathName !== "/login" ? "mt-10" : " hidden"}`}>
       <div className=" flex flex-col sm:flex-row gap-5 sm:gap-8 items-center justify-center sm:justify-normal">
         <Image
           src={profile}
@@ -53,7 +53,7 @@ const SmallInfo = () => {
             Haryana, India
           </p>
 
-          <p className=" text-sm font-medium text-gray-500 dark:text-gray-400 text-center sm:text-start">
+          <p className=" text-sm font-medium text-gray-600 dark:text-gray-400 text-center sm:text-start">
             As a full-stack developer, I specialize in transforming creative
             ideas into innovative web applications. With a touch of pixel magic,
             I craft visually stunning and responsive websites.
@@ -94,10 +94,10 @@ const SmallInfo = () => {
               <Link
                 aria-label={item.title}
                 href={item.href}
-                className={`px-4 py-2 relative font-medium text-gray-900  dark:text-gray-50  transition-all duration-300 ${
+                className={`px-4 py-2 relative font-semibold text-gray-900  dark:text-gray-50  transition-all duration-300 ${
                   item.href === pathName
                     ? " font-medium text-[16px]  text-gray-700 dark:text-gray-300 dark:bg-gray-800 bg-slate-200 rounded-full "
-                    : " hover:text-gray-950 hover:font-semibold "
+                    : " hover:text-gray-950 hover:font-bold "
                 } `}
               >
                 {item.title}

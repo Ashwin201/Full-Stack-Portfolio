@@ -1,7 +1,7 @@
 import AboutMe from "@/components/About";
 import React from "react";
 export const metadata = {
-  title: "About Me",
+  title: "Profile",
   description: "Showcasing code, design and projects.",
 };
 
